@@ -24,7 +24,7 @@ export class IntradeskToken implements INodeType {
         usableAsTool: true,
         credentials: [
             {
-                name: 'IntradeskTokenApi',
+                name: IntradeskTokenApi.CredentialName,
                 required: true,
             },
         ],

@@ -7,10 +7,11 @@ import {
 } from 'n8n-workflow'
 
 export class IntradeskTokenApi implements ICredentialType {
-	static CredentialName = 'Intradesk User'
+	static CredentialName = 'IntradeskUserApi'
 
 	name = IntradeskTokenApi.CredentialName
 	displayName = 'IntradeskToken API';
+    icon: Icon = { light: 'file:../icons/intradesktoken_light.svg', dark: 'file:../icons/intradesktoken_dark.svg' };
 
 	properties: INodeProperties[] = [
 		{
@@ -31,6 +32,4 @@ export class IntradeskTokenApi implements ICredentialType {
 			default: '',
 		},
 	]
-
-	icon: Icon = { light: 'file:../icons/intradesktoken_light.svg', dark: 'file:../icons/intradesktoken_dark.svg' };
 }
