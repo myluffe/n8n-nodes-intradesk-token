@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-intradesk-token",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Get Intradesk auth token",
 	"license": "MIT",
 	"homepage": "",
