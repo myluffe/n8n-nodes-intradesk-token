@@ -1,19 +1,20 @@
 {
-	"name": "n8n-nodes-<...>",
+	"name": "n8n-nodes-intradesk-token",
 	"version": "0.1.0",
-	"description": "",
+	"description": "Get Intradesk auth token",
 	"license": "MIT",
 	"homepage": "",
 	"keywords": [
-		"n8n-community-node-package"
+		"n8n-community-node-package",
+		"intradesk"
 	],
 	"author": {
-		"name": "",
-		"email": ""
+		"name": "Alexey Gusev",
+		"email": "alexey.gusev@k2consult.ru"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/<...>/n8n-nodes-<...>.git"
+		"url": "https://github.com/myluffe/n8n-nodes-intradesk-token"
 	},
 	"scripts": {
 		"build": "n8n-node build",
@@ -31,16 +32,15 @@
 		"n8nNodesApiVersion": 1,
 		"strict": true,
 		"credentials": [
-			"dist/credentials/GithubIssuesApi.credentials.js",
-			"dist/credentials/GithubIssuesOAuth2Api.credentials.js"
+			"dist/credentials/IntradeskTokenApi.credentials.js"
 		],
 		"nodes": [
-			"dist/nodes/GithubIssues/GithubIssues.node.js",
-			"dist/nodes/Example/Example.node.js"
+			"dist/nodes/IntradeskToken/IntradeskToken.node.js"
 		]
 	},
 	"devDependencies": {
 		"@n8n/node-cli": "*",
+		"@types/qs": "^6.14.0",
 		"eslint": "9.32.0",
 		"prettier": "3.6.2",
 		"release-it": "^19.0.4",
@@ -48,5 +48,9 @@
 	},
 	"peerDependencies": {
 		"n8n-workflow": "*"
+	},
+	"dependencies": {
+		"axios": "^1.13.2",
+		"qs": "^6.14.0"
 	}
 }
